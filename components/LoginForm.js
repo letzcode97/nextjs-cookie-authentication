@@ -1,4 +1,7 @@
+import {loginUser} from '../lib/auth';
+
 class LoginForm extends React.Component {
+
     constructor() {
         super();
 
@@ -19,9 +22,12 @@ class LoginForm extends React.Component {
       }
 
       handleSubmit = (event) => {
+        const { email, password } = this.state;
+
         event.preventDefault();
-    
-        console.log(this.state);
+        
+        loginUser(email, password);
+       // console.log(this.state);
       }
     
 
