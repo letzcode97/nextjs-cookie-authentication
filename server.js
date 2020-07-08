@@ -18,7 +18,7 @@ const handle = app.getRequestHandler();
 
 const AUTH_USER_TYPE = "authenticated";
 
-const COOKIE_SECRET = "asdfghjxcvbnmrthjkasadsajkkozy"; // random string for signed cookies
+const COOKIE_SECRET = "Add_random_string"; // random string for signed cookies
 
 const COOKIE_OPTIONS = {
     httpOnly: true,
